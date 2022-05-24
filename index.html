@@ -1,37 +1,30 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <title>Componente range</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="range">
-        <div class="sliderValue">
-          <span>100</span>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Range</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="component">
+      <div class="progress">
+        <div class="component-barra">
+          <div class="barra"></div>
         </div>
-<div class="field">
-          <div class="value left">
-0</div>
-<input type="range" min="0" max="200" value="100" steps="1">
-          <div class="value right">
-200</div>
-</div>
-</div>
-<script>
-      const slideValue = document.querySelector("span");
-      const inputSlider = document.querySelector("input");
-      inputSlider.oninput = (()=>{
-        let value = inputSlider.value;
-        slideValue.textContent = value;
-        slideValue.style.left = (value/2) + "%";
-        slideValue.classList.add("show");
-      });
-      inputSlider.onblur = (()=>{
-        slideValue.classList.remove("show");
-      });
-    </script>
+      </div>
 
-  </body>
+    <div class="range">
+      <button class="right">
+        <span>&lt;</span>
+      </button>
+      <div class="value">0</div>
+      <button class="left">
+        <span>&gt;</span>
+      </button>
+    </div>
+  </div>
+  <script src="index.js" defer></script>
+</body>
 </html>
