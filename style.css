@@ -26,6 +26,7 @@
 .left, .right{
   background-color: transparent;
   border: none;
+  color: white;
 }
 
 .left, .right span{
@@ -37,7 +38,7 @@
 .value{
   font-size: 50px;
   font-weight: 900;
-  color: white;
+  color: blue;
 }
 
 .progress{
@@ -72,6 +73,6 @@
   height: 20px;
   margin: 5px 0px;
   z-index: 2;
-  background-color: rgb(18, 203, 64);
+  background-color: white;
   border-radius: 50px;
 }
